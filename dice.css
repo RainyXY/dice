@@ -1,0 +1,99 @@
+/*1*/
+.first-face{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*2*/
+.second-face{
+	display: flex;
+	justify-content: space-between;
+}
+.second-face .pip:nth-child(2){
+	align-self: flex-end;
+}
+/*3*/
+.third-face{
+	display: flex;
+	justify-content: space-between;
+}
+.third-face .pip:nth-child(2){
+	align-self: center;
+}
+.third-face .pip:nth-child(3){
+	align-self: flex-end;
+}
+/*4*/
+.fourth-face{
+	display: flex;
+	justify-content: space-between;
+}
+.column{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+/*5*/
+.fifty-face{
+	display: flex;
+	flex-wrap: wrap;
+}
+.row{
+	flex-basis: 100%;
+	display: flex;
+}
+.row:nth-child(1){
+	justify-content: space-between;
+}
+.row:nth-child(2){
+	justify-content: center;
+}
+.row:nth-child(3){
+	justify-content: space-between;
+}
+/*6*/
+.sixty-face{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	flex-direction: column;
+}
+/*骰子数*/
+.pip {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin: 4px;
+  background-color: #333;
+  box-shadow: inset 0 3px #111, inset 0 -3px #555;
+}
+/*骰子背景样式*/
+[class$="face"] {
+  margin: 16px;
+  padding: 4px;
+  
+  background-color: #e7e7e7;
+  width: 104px;
+  height: 104px;
+  object-fit: contain;
+  
+  box-shadow:
+    inset 0 5px white, 
+    inset 0 -5px #bbb,
+    inset 5px 0 #d7d7d7, 
+    inset -5px 0 #d7d7d7;
+  
+  border-radius: 10%;
+}
+/*整体*/
+body{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	vertical-align: center;
+}
+html, body {
+  height: 100%;
+}
